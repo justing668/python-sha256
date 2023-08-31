@@ -2,8 +2,9 @@ name: pyinstaller
 on: workflow_dispatch
 
 jobs:
+
   build-on-windows:
-    run-on: windows-2022
+    runs-on: windows-2022
     steps:
       - name: checkout code
         uses: actions/checkout@v3
