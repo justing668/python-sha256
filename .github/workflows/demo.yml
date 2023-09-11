@@ -17,3 +17,17 @@ jobs:
         with:
           name: sha256-linux
           path: dist/sha256
+
+  test-build-linux:
+    runs-on: ubuntu-22.04
+    needs: build-on-linux
+    steps:
+      - names: download binary file
+        uses: actions/download-artifact@v3
+        with:
+          name: sha256-linux
+      - name: test binary file
+        run: |
+          ls
+          chmod +x sha256
+          ./sha256 sha256
