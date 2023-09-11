@@ -1,9 +1,9 @@
-name: build-in-env
+name: workflow_env
 on: workflow_dispatch
 
 jobs:
 
-  build-on-linux:
+  build-in-linux:
     runs-on: ubuntu-22.04
     steps:
       - name: checkout code
