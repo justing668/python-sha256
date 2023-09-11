@@ -1,4 +1,4 @@
-name: pyinstaller
+name: build-in-env
 on: workflow_dispatch
 
 jobs:
