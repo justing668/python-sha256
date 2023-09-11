@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-22.04
     needs: build-on-linux
     steps:
-      - names: download binary file
+      - name: download binary file
         uses: actions/download-artifact@v3
         with:
           name: sha256-linux
